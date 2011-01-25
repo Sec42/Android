@@ -285,7 +285,6 @@ void find_input(char *keyboard){
 	char n[200];
 	int found=0;
 
-
 	inp=opendir(INPUTDIR);
 	if(inp == NULL){
 		fprintf(stderr,"Can't open " INPUTDIR "\n");
@@ -339,7 +338,6 @@ void get_boot_time(){
 	if(dbg)printf("Got uptime: %f\n",uptime);
 	boottime=time((time_t*)NULL)-uptime;
 
-
 	fclose(boot);
 }
 
@@ -347,7 +345,7 @@ void interactive(FILE * f){
 	struct termios tio;
 	int c,c2,c3;
 
-	/* enable sinle char input */
+	/* enable single char input */
 	tcgetattr(STDIN_FILENO,&tio);
 	tio.c_lflag &=~ICANON;
 	tcsetattr(STDIN_FILENO,TCSANOW,&tio);
@@ -465,9 +463,8 @@ int main(int argc, char *argv[]) {
 	};
 
 	/* nothing done yet? Enable life input */
-	if(!btdt){
+	if(!btdt)
 		interactive(stdin);
-	};
 	
 	return 0;
 }
