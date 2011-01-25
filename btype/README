@@ -1,0 +1,17 @@
+/* btype.c - (c) 2011 by Stefan `Sec` Zehl <sec@42.org>
+ * 
+ * Small program to generate keyboard input on android devices
+ * Uses /dev/input/event* to simulate keypresses on the hardware keyboard
+ * Tested and written on the HTC Vision a.k.a. Desire Z
+ *
+ * NOTE: Due to its design it can only create the characters you can
+ * reach on your keyboard. Install a more capable keymap if you need
+ * more characters.
+ * 
+ * "THE BEER-WARE LICENSE" (Revision 42b):
+ * <sec@42.org> wrote this file. As long as you retain this notice you
+ * can do whatever you want with this stuff. If we meet some day, and
+ * you think this stuff is worth it, you can buy me a beer in return
+ * -- Sec
+ *
+ */
