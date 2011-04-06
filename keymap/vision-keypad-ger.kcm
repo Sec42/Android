@@ -38,8 +38,8 @@ W              'W'       '2'       'w'       'W'       '2'       '2'
 X              'X'       '-'       'x'       'X'       '-'       '~'
 Y              'Y'       '1'       'y'       'Y'       '_'       '~'
 Z              'Z'       '6'       'z'       'Z'       '6'       '6'
-COMMA          ','       0x0       ','       ';'       ';'       ';'
-PERIOD         '.'       0x0       '.'       ':'       ':'       ':'
+COMMA          ','       0x0       ','       ';'       ';'       '{'
+PERIOD         '.'       0x0       '.'       ':'       ':'       '}'
 TAB            0x9       0x9       0x9       0x9       0x9       0x9
 SPACE          0x20      0x20      0x20      0x20      0x20      0x20
 ENTER          0xA       0xA       0xA       0xA       0xD       0xD
