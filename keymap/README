@@ -1,0 +1,66 @@
+This is my "enhanced" german Vision Z keymap. 
+
+Here are all the changes from the stock CM keymap, and their rationale. If
+someone has ideas how to improve it, please comment:
+
+Fixed the following to match my printed keyboard labels:
+alt+a => Euro     (+shift => Euro)
+alt+b => sharp-s
+alt+j => a umlaut (+shift => A umlaut)
+alt+k => u umlaut (+shift => U umlaut)
+alt+l => o umlaut (+shift => O umlaut)
+
+alt+m => ' (was = before)
+alt+? => = (was ' before)
+
+Additionally added quite a few additional mappings for the "Shift+Alt"
+layer which before was mostly unused:
+
+Shift+Alt+C => [ (think Shift+( = [ )
+Shift+Alt+V => ] (think Shift+) = ] )
+Shift+Alt+Y => ~ (think Shift+_ = ~ )
+Shift+Alt+X => ~ (Shift+- = ~ ) [dupe of previous key, I found both useful]
+Shift+Alt+M => ` (think Shift+' = ` )
+Shift+/     => \ 
+Shift+Alt+/ => | (similar to / and \)
+Shift+@     => ^ (the ^ key is usually on the top left in germany)
+Alt+Enter   => ^m (The "other" kind of newline)
+Shift+,     => ; (easy access, same as with Alt)
+Shift+.     => : (easy access, same as with Alt)
+
+and last but not least some keys which don't have a really good place, but
+were needed anyway:
+
+Shift+Alt+B => <
+Shift+Alt+N => >  [the two keys to the right of ()]
+Shift+Alt+, => {
+Shift+Alt+, => }  [right and left of the space bar]
+
+Also fixes the "numbers mode" mappings:
+
+The first row now produces the numbers on the labels:
+
+qwertzuiop => 1234567890
+
+Also allowed the "numbers mode" to produce standard delimiters according
+to the special chars printed on the keys:
+
+C => (
+H => *
+N => +
+S => #
+V => )
+X => -
+
+All other alpha alpha keys were changed to produce the same number in the
+keyboard row it is in (e.g. U=7, therefore J and M => 7, too).
+
+With this modifications it should even be possible to play nethack on your
+Desire Z :-)
+
+To install:
+
+adb push vision-keypad-ger.kcm.bin  /system/usr/keychars/
+
+(You might need an "adb remount" beforehand)
+
