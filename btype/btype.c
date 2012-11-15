@@ -462,7 +462,7 @@ int main(int argc, char *argv[]) {
 		btdt=1;
 	};
 
-	/* nothing done yet? Enable life input */
+	/* nothing done yet? Enable live input */
 	if(!btdt)
 		interactive(stdin);
 	
