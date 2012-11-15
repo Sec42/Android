@@ -34,7 +34,7 @@ were needed anyway:
 Shift+Alt+B => <
 Shift+Alt+N => >  [the two keys to the right of ()]
 Shift+,     => {
-Shift+,     => }  [right and left of the space bar]
+Shift+.     => }  [right and left of the space bar]
 
 Also fixes the "numbers mode" mappings:
 
